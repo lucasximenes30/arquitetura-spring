@@ -1,13 +1,15 @@
+
 package io.github.lucasximenes30.arquiteturaspring.montadora;
 
+import io.github.lucasximenes30.arquiteturaspring.montadora.TipoMotor;
+
 public class Motor {
+
     private String modelo;
     private Integer cavalos;
     private Integer cilindros;
-    private Double  litragem;
-    private TipoMotor tipoMotor;
-
-
+    private Double litragem;
+    private TipoMotor tipo;
 
     public String getModelo() {
         return modelo;
@@ -41,22 +43,22 @@ public class Motor {
         this.litragem = litragem;
     }
 
-    public TipoMotor getTipoMotor() {
-        return tipoMotor;
+    public TipoMotor getTipo() {
+        return tipo;
     }
 
-    public void setTipoMotor(TipoMotor tipoMotor) {
-        this.tipoMotor = tipoMotor;
+    public void setTipo(TipoMotor tipo) {
+        this.tipo = tipo;
     }
 
     @Override
-public String toString() {
+    public String toString() {
         return "Motor{" +
                 "modelo='" + modelo + '\'' +
                 ", cavalos=" + cavalos +
                 ", cilindros=" + cilindros +
                 ", litragem=" + litragem +
-                ", tipoMotor=" + tipoMotor +
+                ", tipo=" + tipo +
                 '}';
     }
 }
